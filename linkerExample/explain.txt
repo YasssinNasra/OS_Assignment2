@@ -1,0 +1,6 @@
+file1.c defines a function called hello() that prints hello from 
+file1 and it cant run alone as it doesn't intialize the main function
+
+file2.c calls the hello() defined in file1.c function in its main function
+
+what happens is when running gcc file1.c file2.c -o outputFile the compiler links both object files togther to output one excecutable program 
