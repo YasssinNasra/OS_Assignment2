@@ -1,0 +1,3 @@
+The loader which is a part of the main OS has the job of loading the excecutable files produced like the ones outputed from the linker in the memory to prepare it to run in machine cycle (Fetch, Decode, Excecute and Store) and the loader also links libraries when Excecuting the program 
+
+like: ldd <excecutable>

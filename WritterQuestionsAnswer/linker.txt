@@ -1,0 +1,3 @@
+The linker is the program that combines multiple object files and libraries into one singal excecutable file soffor example if i have program that have multiple c programs inside it that are dependent on each other through calling each others functions the linker compiles all files togther to one excecutable that runs and gives final output 
+
+like:  gcc f1.c f2.c -o out
