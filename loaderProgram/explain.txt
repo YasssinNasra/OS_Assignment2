@@ -1,0 +1,3 @@
+The gcc program.c -o output compiles the file as normal and save the output with its metadata in file named output
+
+when running ldd output what it does it asks linux for the libraries that the program is depending on like libraries and other dependencies
