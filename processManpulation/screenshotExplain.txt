@@ -2,7 +2,7 @@ The screenshot shows how linux handles background jobs and process IDs
 
 sleep 100=> creates a process that does nothing for 100 seconds and adding & to it (sleep 300 &) makes run in the background
 
-The terminal print the job number 1 2 .. and alsp PID like 10132
+The terminal print the job number 1 2 .. and also PID like 10132
 
 jobs=> lists the background jobs
 
