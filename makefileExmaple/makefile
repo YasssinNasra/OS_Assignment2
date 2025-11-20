@@ -1,26 +1,26 @@
 CC = gcc
+# Source files path
+PROC_SRC  = ../forkProgram/processCreation.c
+LINK_SRC = ../linkerExample/file1.c ../linkerExample/file2.c
+LOAD_SRC = ../loaderProgram/program.c
 
-# Source files
-LINKER_SOURCE_DIRECTORY = ../linkerExample/file1.c ../linkerExample/file2.c
-LOADER_SOURCE_DIRECTORY = ../loaderProgram/program.c
-PROCCESS_SOURCE_DIRECTORY   = ../forkProgram/processCreation.c
 # Executables
-LINKER_EXE = ../linkerExample/outputFiles
-LOADER_EXE = ../loaderProgram/output
-PROCCESS_EXE   = ../forkProgram/processCraetionOutput
+LINK_EXE = ../linkerExample/outputFiles 
+LOAD_EXE = ../loaderProgram/output
+PROC_EXE   = ../forkProgram/processCreationOutput
 
-all: $(LINKER_EXE) $(LOADER_EXE) $(PROCCESS_EXE)
+all: $(LINK_EXE) $(LOAD_EXE) $(PROC_EXE)
 
-$(LINKER_EXE): $(LINKER_SOURCE_DIRECTORY)
-	$(CC) $(LINKER_SOURCE_DIRECTORY) -o $(LINKER_EXE)
+$(LINK_EXE): $(LINK_SRC)
+	$(CC) $(LINK_SRC) -o $(LINK_EXE)
 
-$(LOADER_EXE): $(LOADER_SOURCE_DIRECTORY)
-	$(CC) $(LOADER_SOURCE_DIRECTORY) -o $(LOADER_EXE)
+$(LOAD_EXE): $(LOAD_SRC)
+	$(CC) $(LOAD_SRC) -o $(LOAD_EXE)
 
-$(PROCCESS_EXE): $(PROCCESS_SOURCE_DIRECTORY)
-	$(CC) $(PROCCESS_SOURCE_DIRECTORY) -o $(PROCCESS_EXE)
+$(PROC_EXE): $(PROC_SRC)
+	$(CC) $(PROC_SRC) -o $(PROC_EXE)
 
 run: all
-	$(LINKER_EXE)
-	$(LOADER_EXE)
+	$(LINK_EXE)
+	$(LOAD_EXE)
 	$(PROC_EXE)
