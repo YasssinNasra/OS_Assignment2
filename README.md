@@ -1,4 +1,6 @@
 # Operating Systems – Assignment 2
+Name: Yassin Ahmed Mohamed Kamal ELdeen Nasra
+ID: 2310503
 
 This repository contains the full solution for Assignment 2 in the Operating Systems (CSE233) course.  
 The assignment focuses on understanding process creation, program building, and how the operating system handles executable files at a low level.  
@@ -71,8 +73,7 @@ It allows the user to:
 
 - Build all programs with a single command.
 - Compile individual programs.
-
-
-
-
-
+  navigate to the makefileExample folder and run the following command to run complile and run all of the programs
+  ```bash
+  make run
+  
