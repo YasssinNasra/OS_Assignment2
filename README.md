@@ -8,8 +8,8 @@ All required components, including code, explanations, Makefile, README, license
 
 According to the assignment instructions, the project must include the following:
 
-1. Write and implement all code examples from Lab-5.  
-2. Explain each program and describe exactly what it does.  
+1. Write and implement all code examples that were in Lab 5.  
+2. Explain what each program does.  
 3. Explain the job of the **Linker**.  
 4. Explain the job of the **Loader**.  
 5. Write a **Makefile** that compiles each example program and successfully runs them.  
@@ -19,9 +19,9 @@ According to the assignment instructions, the project must include the following
 
 This repository contains all of the above.
 
-## Lab-5 Programs Included
+## Lab 5 Programs Included
 
-The assignment required implementing the process-related programs covered in Lab-5.  
+The assignment required implementing the process related programs covered in Lab 5 like the Linker, Loader and the fork program.  
 This repository contains examples demonstrating:
 
 ### 1. Forking Programs  
@@ -30,17 +30,17 @@ Examples that use the `fork()` system call to create new processes.
 These programs demonstrate:
 - How a child process is created.
 - How parent and child processes run concurrently.
-- How process IDs differ between parent and child.
-- How multiple forks create multiple processes.
+- How process IDs differ between parent(PID>0) and(PID=0) child.
+
 
 ### 2. Process Manipulation  
 Examples that show:
-- starting a background process.
-- stopping the background process.
-- resuming the background process.
-- terminating a process.
+- starting a background process(ex: Sleep 100 &).
+- stopping the background process(ex: kill -STOP <PID>).
+- resuming the background process(ex: kill -CONT <PID>).
+- terminating a process(ex: kill <PID>).
 
-Each program has a written explanation describing what it does, how many processes it creates, and why the output may vary.
+Each program has a written explanation describing what it does.
 
 ## Linker Explanation
 
@@ -48,7 +48,7 @@ The **Linker** is responsible for taking one or more compiled object files (`.o`
 It performs tasks such as:
 
 - Resolving external symbols (functions and variables declared in other files or libraries).
-- Connecting the program with standard system libraries.
+- Connecting the program with standard system libraries shared between the files linked.
 - Producing the final compiled executable.
 
 A full explanation is included in the answers file.
@@ -60,8 +60,6 @@ Its job is to:
 
 - Load the executable file from disk into RAM.
 - Set up memory segments (text, data, heap, and stack).
-- Perform relocations if necessary.
-- Prepare the process control block (PCB).
 - Start execution at the program’s entry point (usually the `main` function).
 
 A detailed explanation is included in the answers file.
@@ -73,9 +71,8 @@ It allows the user to:
 
 - Build all programs with a single command.
 - Compile individual programs.
-- Remove build artifacts.
 
-Example usage:
 
-```bash
-make
+
+
+
