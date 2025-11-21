@@ -61,7 +61,7 @@ It allows the user to:
 
 - Build all programs with a single command.
 - Compile individual programs.
-  navigate to the makefileExample folder and run the following command to run complile and run all of the programs
+  navigate to the makefileExample folder and run the following command to complile and run all of the programs
   ```bash
   make run
   
