@@ -6,20 +6,6 @@ This repository contains the full solution for Assignment 2 in the Operating Sys
 The assignment focuses on understanding process creation, program building, and how the operating system handles executable files at a low level.  
 All required components, including code, explanations, Makefile, README, license, and screenshots, are included as part of this submission.
 
-## Overview of the Assignment Requirements
-
-According to the assignment instructions, the project must include the following:
-
-1. Write and implement all code examples that were in Lab 5.  
-2. Explain what each program does.  
-3. Explain the job of the **Linker**.  
-4. Explain the job of the **Loader**.  
-5. Write a **Makefile** that compiles each example program and successfully runs them.  
-6. Write a README.md following the structure suggested by makeareadme.com.  
-7. Add an open-source license to the project.  
-8. Upload the entire project to a public GitHub repository.
-
-This repository contains all of the above.
 
 ## Lab 5 Programs Included
 
